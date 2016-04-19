@@ -21,7 +21,7 @@ public class Point {
   }
 
   private void setY() {
-    _x = x;
+    _y = y;
   }
 
   public int getY() {
@@ -29,7 +29,7 @@ public class Point {
   }
 
   public String toString() {
-    return "(" + _x + ", " + _y + ")";
+    return "(" + _x + "," + _y + ")";
   }
 
 }

@@ -18,6 +18,14 @@ public class Path {
     }
   }
 
+  public String toString() {
+    String result = "[";
+    for (int i = 0; i < _points.size(); i++) {
+      result += _points.get(i).toString();
+    }
+    return result + "]";
+  }
+
   public void mystery(int i, int j) {
     Point point = _points.get(i);
     _points.set(j, point);
@@ -41,14 +49,6 @@ public class Path {
     for (int i = 0; i < _points.size(); i++) {
       this.mystery(i, this.intrigue(i));
     }
-  }
-
-  public String toString() {
-    String result = "[";
-    for (int i = 0; i < _points.size(); i++) {
-      result += _points.get(i).toString();
-    }
-    return result + "]";
   }
 
 }

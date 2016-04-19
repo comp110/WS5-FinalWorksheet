@@ -1,14 +1,16 @@
 package comp110;
 
 /*
- * The following problems are review over code seen in the second midterm.
+ * The following problems are review over code seen in the second exam.
  * 
  * Your changes will primarily be in the Point and Path classes. There are
  * only a few problems that you'll need to modify code in this file for. They are:
  * 4, 8, 12, 16, 31
+ * 
+ * Each problem number corresponds to question numbers on the exam.
  */
 
-public class ReviewWorksheet extends ClassGalleryApp {
+public class FinalWorksheet {
 
   /*
    * Fix the setY() method in the Point class so that it is public, has no
@@ -83,22 +85,11 @@ public class ReviewWorksheet extends ClassGalleryApp {
 
   /*
    * Add new Point instances to Path p and move the Path such that the String
-   * returned by this method is: "[(1,1)(2,2)(0,0)]"
+   * returned by this method is: "[(3,3)(2,2)(0,0)]"
    */
   public String p16Output() {
     Path p = new Path();
     // TODO
-    return p.toString();
-  }
-
-  /*
-   * The mystery method should swap the elements of indices i and j. Currently
-   * one of the values is getting overwritten. Fix Path's mystery method so that
-   * it swaps the elements at indices i and j.
-   */
-  public String p17FixMystery() {
-    Path p = this.examplePath();
-    p.mystery(0, 1);
     return p.toString();
   }
 
@@ -112,11 +103,22 @@ public class ReviewWorksheet extends ClassGalleryApp {
    * suspense => sortDescending
    * 
    * You will also need to fix the sortDescending method to call the renamed
-   * methods instead, and the call to mystery in the p17 method above.
+   * methods instead.
    */
   public Path p24RenameMethods() {
     // Nothing to do here.
     return this.examplePath();
+  }
+
+  /*
+   * Swap should switch the elements of indices i and j. Currently one of the
+   * values is getting overwritten. Fix Path's swap method so that it swaps the
+   * elements at indices i and j. (Note: Complete p24 above, first!)
+   */
+  public String p17FixSwap() {
+    Path p = this.examplePath();
+    p.swap(0, 1);
+    return p.toString();
   }
 
   /*
@@ -145,11 +147,6 @@ public class ReviewWorksheet extends ClassGalleryApp {
   }
 
   /* You can ignore the following code and do not need to change it. */
-
-  public static void main(String[] args) {
-    _instance = new ReviewWorksheet();
-    launch();
-  }
 
   private Path examplePath() {
     Path p = new Path();
