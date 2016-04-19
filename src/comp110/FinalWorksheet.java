@@ -114,6 +114,8 @@ public class FinalWorksheet {
    * Swap should switch the elements of indices i and j. Currently one of the
    * values is getting overwritten. Fix Path's swap method so that it swaps the
    * elements at indices i and j. (Note: Complete p24 above, first!)
+   * 
+   * You should not need to change anything in the code below. Just fix swap!
    */
   public String p17FixSwap() {
     Path p = this.examplePath();
